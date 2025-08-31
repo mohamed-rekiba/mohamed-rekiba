@@ -10,7 +10,7 @@
 
 ###
 
-<p align="left">✨ Creating bugs since 2013<br>📚 I'm currently learning advanced Kubernetes patterns and HashiCorp Vault<br>🎯 Goals: Lead cloud-native transformation initiatives and contribute to open source DevOps tools<br>🎲 Fun fact: Built custom Linux distributions and managed infrastructure for major banks</p>
+<p align="left">🚀 Senior DevOps Engineer with over a decade of experience in cloud infrastructure and automation<br>☁️ Expert in AWS, Kubernetes, and Infrastructure as Code (Terraform, Ansible)<br>🎯 Passionate about cloud-native transformation and open source contributions<br>🏆 Led critical migrations achieving 99.9% uptime for enterprise clients</p>
 
 ###
 
