@@ -68,7 +68,7 @@
 
 <p align="left">💻 <strong>Senior Software Engineer</strong> @ Vrteek<br>
 📅 2017 - 2019<br>
-🏆 Built VR/AR systems, developed Facebook Messenger chatbots serving 10,000+ users, achieved 4.5+ star ratings</p>
+🏆 Built VR/AR systems, developed Facebook Messenger chatbots</p>
 
 ###
 
