@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">My name is **Mohamed Rekiba** and I'm a **Senior DevOps Engineer**, from Egypt 🇪🇬</p>
+<p align="left">My name is <strong>Mohamed Rekiba</strong> and I'm a <strong>Senior DevOps Engineer<strong>, from Egypt 🇪🇬</p>
 
 ###
 
