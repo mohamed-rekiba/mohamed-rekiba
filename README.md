@@ -58,7 +58,7 @@
 
 ###
 
-<p align="left">🔧 <strong>Senior Cloud Infrastructure Engineer</strong> @ Vertex Agility<br>
+<p align="left">🔧 <strong>Senior Cloud Infrastructure Engineer</strong> @ Vertex Agility (McKinsey & Company)<br>
 📅 2023 - Present<br>
 🏆 Led HashiCorp Vault integration, reduced deployment complexity by 30%, achieved 99.9% network accessibility</p>
 
