@@ -10,7 +10,7 @@
 
 ###
 
-<p align="left">🚀 Senior DevOps Engineer with over a decade of experience in cloud infrastructure and automation<br>☁️ Expert in AWS, Kubernetes, and Infrastructure as Code (Terraform, Ansible)<br>🎯 Passionate about cloud-native transformation and open source contributions<br>🏆 Led critical migrations achieving 99.9% uptime for enterprise clients</p>
+<p align="left">🚀 Senior DevOps Engineer with over a decade of experience in cloud infrastructure and automation<br>☁️ Expert in AWS, Kubernetes, and Infrastructure as Code (Terraform, Ansible)<br>🎯 Passionate about Linux, cloud-native transformation and open source contributions<br>🏆 Led critical migrations achieving 99.9% uptime for enterprise clients</p>
 
 ###
 
