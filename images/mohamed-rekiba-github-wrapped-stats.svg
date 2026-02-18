@@ -1,0 +1,16 @@
+<svg width="449" height="280" viewBox="0 0 449 280" xmlns="http://www.w3.org/2000/svg" lang="en" xml:lang="en">
+<rect x="2" y="2" width="445" height="276" rx="6" stroke-width="4" stroke="rgba(56,139,253,0.4)" fill="#0d1117"/>
+<text x="22" y="42" fill="#58a6ff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="20" font-weight="700">GitHub Wrapped Metrics</text>
+<text x="22" y="74" fill="#8b949e" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="14" font-weight="600">Universal Rank</text>
+<text x="427" y="74" fill="#c9d1d9" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="14" font-weight="700" text-anchor="end">Top 15%</text>
+<text x="22" y="104" fill="#8b949e" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="14" font-weight="600">Longest Streak</text>
+<text x="427" y="104" fill="#c9d1d9" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="14" font-weight="700" text-anchor="end">12 days</text>
+<text x="22" y="134" fill="#8b949e" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="14" font-weight="600">Most Active Month</text>
+<text x="427" y="134" fill="#c9d1d9" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="14" font-weight="700" text-anchor="end">October</text>
+<text x="22" y="164" fill="#8b949e" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="14" font-weight="600">Most Active Day</text>
+<text x="427" y="164" fill="#c9d1d9" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="14" font-weight="700" text-anchor="end">Thursday</text>
+<text x="22" y="194" fill="#8b949e" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="14" font-weight="600">Top Language</text>
+<text x="427" y="194" fill="#c9d1d9" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="14" font-weight="700" text-anchor="end">Go</text>
+<text x="22" y="224" fill="#8b949e" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="14" font-weight="600">Power Level</text>
+<text x="427" y="224" fill="#c9d1d9" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="14" font-weight="700" text-anchor="end">Pro Mode</text>
+</svg>

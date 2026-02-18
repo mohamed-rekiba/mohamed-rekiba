@@ -1,0 +1,45 @@
+---
+name: GitHub Profile Stats
+
+on:
+  schedule:
+    - cron: '0 3 * * 0'  # Weekly at 3am UTC on Sunday
+  workflow_dispatch:      # Manual trigger
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch contributions and update contribution_history.csv
+        run: python scripts/fetch_contributions.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate GitHub Stats SVG
+        run: python scripts/generate_stats_svg.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate GitHub Wrapped SVG
+        run: python scripts/generate_wrapped_svg.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push SVGs and contribution history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add images/mohamed-rekiba-github-stats.svg images/mohamed-rekiba-github-wrapped-stats.svg stats/contribution_history.csv
+          git diff --staged --quiet || git commit -m "chore: update GitHub profile stats SVGs and contribution history [skip ci]"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,99 +1,109 @@
-<h1 align="left">Hey 👋 What's up?</h1>
-
-###
-
-<p align="left">My name is <strong>Mohamed Rekiba</strong> and I'm a <strong>Senior DevOps Engineer<strong>, from Egypt 🇪🇬</p>
-
-###
-
-<h2 align="left">About me</h2>
-
-###
-
-<p align="left">🚀 Senior DevOps Engineer with over a decade of experience in cloud infrastructure and automation<br>☁️ Expert in AWS, Kubernetes, and Infrastructure as Code (Terraform, Ansible)<br>🎯 Passionate about Linux, cloud-native transformation and open source contributions<br>🏆 Led critical migrations achieving 99.9% uptime for enterprise clients</p>
-
-###
-
-<h2 align="left">I code with</h2>
-
-###
 
 <div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
+  <img src="https://skillicons.dev/icons?i=aws&theme=dark" height="40" alt="aws logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" height="40" alt="go logo"  />
+  <img src="images/lambda-logo.svg" height="40" alt="lambda logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="40" alt="go logo"  />
+  <img src="images/step-functions-logo.svg" height="40" alt="step functions logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+  <img src="images/eventbridge-logo.svg" height="40" alt="eventbridge logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo"  />
+  <img src="images/api-gateway-logo.svg" height="40" alt="api gateway logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="40" alt="php logo"  />
+  <img src="images/iam-logo.svg" height="40" alt="iam logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo"  />
+  <img src="images/kms-logo.svg" height="40" alt="kms logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" height="40" alt="angular logo"  />
+  <img src="images/secrets-manager-logo.svg" height="40" alt="secrets manager logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" height="40" alt="aws logo"  />
+  <img src="images/s3-logo.svg" height="40" alt="s3 logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" height="40" alt="kubernetes logo"  />
+  <img src="images/vpc-logo.svg" height="40" alt="vpc logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" alt="docker logo"  />
+  <img src="images/vpc-lattice-logo.svg" height="40" alt="vpc lattice logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" height="40" alt="terraform logo"  />
+  <img src="images/transit-gateway-logo.svg" height="40" alt="transit gateway logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" height="40" alt="ansible logo"  />
+  <img src="images/cloud-wan-logo.svg" height="40" alt="cloud wan logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" alt="linux logo"  />
+  <img src="images/ec2-logo.svg" height="40" alt="ec2 logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo"  />
+  <img src="images/ecs-logo.svg" height="40" alt="ecs logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40" alt="github logo"  />
+  <img src="images/eks-logo.svg" height="40" alt="eks logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" height="40" alt="gitlab logo"  />
+  <img src="images/rds-logo.svg" height="40" alt="rds logo" />
+  <img width="12" />
+  <img src="images/dynamodb-logo.svg" height="40" alt="dynamodb logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" alt="postgresql logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="mysql logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="40" alt="redis logo" />
+  <img width="12" />
+  <img src="images/bedrock-logo.svg" height="40" alt="bedrock logo" />
+  <img width="12" />
+  <img width="12" />
+  <img src="images/snowflake-logo.svg" height="40" alt="snowflake logo" />
+  <img width="12" />
+  <img src="images/kafka-logo.svg" height="40" alt="kafka logo" />
+  <img width="12" />
+  <img src="https://imply.io/wp-content/uploads/2023/04/logo-Confluent-case-studies.jpg" height="40" alt="confluent logo" />
+  <img width="12" />
+  <img src="images/cloudwatch-logo.svg" height="40" alt="cloudwatch logo" />
+  <img width="12" />
+  <img src="images/cloudtrail-logo.svg" height="40" alt="cloudtrail logo" />
+  <img width="12" />
+  <img src="https://cdn.simpleicons.org/dynatrace/1496FF" height="40" alt="dynatrace logo" />
+  <img width="12" />
+  <img src="https://img.shields.io/badge/Datadog-632CA6?style=for-the-badge&logo=datadog&logoColor=white" height="40" alt="datadog logo" />
+  <img width="12" />
+  <img src="https://cdn.simpleicons.org/cloudflare/F38020" height="40" alt="cloudflare logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" height="40" alt="kubernetes logo" />
+  <img width="12" />
+  <img src="images/helm-logo.svg" height="40" alt="helm logo" />
+  <img width="12" />
+  <img src="https://cdn.simpleicons.org/argo/EF7B4D" height="40" alt="argocd logo" />
+  <img width="12" />
+  <img src="images/backstage-logo.svg" height="40" alt="backstage logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" alt="docker logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" alt="linux logo" />
+  <img width="12" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Bash_Logo_Colored.svg" height="40" alt="bash logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" height="40" alt="go logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" height="40" alt="terraform logo" />
+  <img width="12" />
+  <img src="https://cdn.simpleicons.org/vault/FFEC6E" height="40" alt="hashicorp vault logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo" />
+  <img width="12" />
+  <img src="https://cdn.simpleicons.org/github/white" height="40" alt="github logo" />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" height="40" alt="github actions logo" />
+  <img width="12" />
+  <img src="images/okta-logo.svg" height="40" alt="okta logo" />
 </div>
 
-###
+<details open>
+<summary>My GitHub Activity</summary>
 
-<h2 align="left">My Experience</h2>
+<table>
+<tr>
+<td width="50%" valign="top"><img src="images/mohamed-rekiba-github-stats.svg" alt="My GitHub Stats" /></td>
+<td width="50%" valign="top"><img src="images/mohamed-rekiba-github-wrapped-stats.svg" alt="My GitHub Wrapped Metrics" /></td>
+</tr>
+</table>
 
-###
-
-<p align="left">🔧 <strong>Senior Cloud Infrastructure Engineer</strong> @ Vertex Agility<br>
-📅 2023 - Present<br>
-🏆 Led HashiCorp Vault integration, reduced deployment complexity by 30%, achieved 99.9% network accessibility</p>
-
-<p align="left">☁️ <strong>Senior DevOps Engineer</strong> @ Cequens<br>
-📅 2019 - 2023<br>
-🏆 Led complete AWS migration achieving 99.9% uptime, managed Al Rajhi Bank infrastructure, reduced deployment time by 70%</p>
-
-<p align="left">💻 <strong>Senior Software Engineer</strong> @ Vrteek<br>
-📅 2017 - 2019<br>
-🏆 Built VR/AR systems, developed Facebook Messenger chatbots</p>
-
-###
-
-<h2 align="left">Key Achievements</h2>
-
-###
-
-<p align="left">✅ Led critical cloud migrations achieving 99.9% uptime<br>
-✅ Reduced deployment complexity by 30% through mono-repository architecture<br>
-✅ Managed high-traffic infrastructure for major enterprise clients<br>
-✅ Implemented automated DevOps pipelines reducing deployment time by 70%<br>
-✅ Developed custom automation tools improving operational efficiency by 60%</p>
-
-###
-
-<h2 align="left">Connect with me</h2>
-
-###
-
-<div align="left">
-  <a href="https://www.linkedin.com/in/mohamed-rekiba" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo"  />
-  </a>
-</div>
-
-###
+</details>
