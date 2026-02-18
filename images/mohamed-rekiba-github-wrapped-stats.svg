@@ -10,7 +10,7 @@
 <text x="22" y="164" fill="#8b949e" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="14" font-weight="600">Most Active Day</text>
 <text x="427" y="164" fill="#c9d1d9" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="14" font-weight="700" text-anchor="end">Thursday</text>
 <text x="22" y="194" fill="#8b949e" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="14" font-weight="600">Top Language</text>
-<text x="427" y="194" fill="#c9d1d9" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="14" font-weight="700" text-anchor="end">Go</text>
+<text x="427" y="194" fill="#c9d1d9" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="14" font-weight="700" text-anchor="end">TypeScript</text>
 <text x="22" y="224" fill="#8b949e" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="14" font-weight="600">Power Level</text>
 <text x="427" y="224" fill="#c9d1d9" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="14" font-weight="700" text-anchor="end">Pro Mode</text>
 </svg>

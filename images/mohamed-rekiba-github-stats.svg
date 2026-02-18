@@ -4,15 +4,13 @@
 <g transform="translate(0, 21)" fill="#c9d1d9">
 <g transform="translate(15, 0)"><g transform="scale(0.095)">
 <text x="0" y="132" textLength="1115" lengthAdjust="spacingAndGlyphs">Contributions</text>
-<text x="2358" y="132" textLength="794" lengthAdjust="spacingAndGlyphs">Past Year</text>
 <text x="3537" y="132" textLength="418" lengthAdjust="spacingAndGlyphs">Total</text>
 </g></g>
 <g transform="translate(15, 21)">
 <path fill="#1f6feb" fill-rule="evenodd" d="M2.5 1.75a.25.25 0 01.25-.25h10.5a.25.25 0 01.25.25v10.5a.25.25 0 01-.25.25H2.75a.25.25 0 01-.25-.25V1.75zM2.75 0A1.75 1.75 0 001 1.75v10.5c0 .966.784 1.75 1.75 1.75h10.5A1.75 1.75 0 0015 12.25V1.75A1.75 1.75 0 0013.25 0H2.75zm8.03 6.28a.75.75 0 00-1.06-1.06L6.75 8.19l-1.97-1.97a.75.75 0 00-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l3.5-3.5z"/>
 <g transform="scale(0.095)">
 <text lengthAdjust="spacingAndGlyphs" textLength="1589" x="263" y="132">Total Contributions</text>
-<text lengthAdjust="spacingAndGlyphs" textLength="319" x="2358" y="132">848</text>
-<text lengthAdjust="spacingAndGlyphs" textLength="422" x="3537" y="132">2026</text>
+<text lengthAdjust="spacingAndGlyphs" textLength="422" x="3537" y="132">2014</text>
 </g></g>
 </g>
 <g transform="translate(0, 84)" fill="#c9d1d9">
@@ -21,78 +19,58 @@
 </g></g>
 <g transform="translate(239, 21)"><circle cx="92" cy="92" r="92" fill="#ffffff"/></g>
 <g transform="translate(240, 22)">
-<path fill-rule="evenodd" fill="#00ADD8" d="M 91,91 L 91.0000,0.0000 A 91 91 0 0 1 181.2462,102.6889 Z"/>
-<path fill-rule="evenodd" fill="#f1e05a" d="M 91,91 L 181.2462,102.6889 A 91 91 0 0 1 106.4765,180.6743 Z"/>
-<path fill-rule="evenodd" fill="#3178c6" d="M 91,91 L 106.4765,180.6743 A 91 91 0 0 1 28.4981,157.1401 Z"/>
-<path fill-rule="evenodd" fill="#3572A5" d="M 91,91 L 28.4981,157.1401 A 91 91 0 0 1 4.8324,120.2600 Z"/>
-<path fill-rule="evenodd" fill="#563d7c" d="M 91,91 L 4.8324,120.2600 A 91 91 0 0 1 0.6207,80.3893 Z"/>
-<path fill-rule="evenodd" fill="#e34c26" d="M 91,91 L 0.6207,80.3893 A 91 91 0 0 1 9.1791,51.1710 Z"/>
-<path fill-rule="evenodd" fill="#00B4AB" d="M 91,91 L 9.1791,51.1710 A 91 91 0 0 1 26.3307,26.9775 Z"/>
-<path fill-rule="evenodd" fill="#ece2a9" d="M 91,91 L 26.3307,26.9775 A 91 91 0 0 1 43.5502,13.3501 Z"/>
-<path fill-rule="evenodd" fill="#4F5D95" d="M 91,91 L 43.5502,13.3501 A 91 91 0 0 1 58.3529,6.0578 Z"/>
-<path fill-rule="evenodd" fill="#c6538c" d="M 91,91 L 58.3529,6.0578 A 91 91 0 0 1 67.6500,3.0467 Z"/>
-<path fill-rule="evenodd" fill="#b07219" d="M 91,91 L 67.6500,3.0467 A 91 91 0 0 1 75.3545,1.3551 Z"/>
-<path fill-rule="evenodd" fill="#178600" d="M 91,91 L 75.3545,1.3551 A 91 91 0 0 1 78.9710,0.7985 Z"/>
-<path fill-rule="evenodd" fill="#427819" d="M 91,91 L 78.9710,0.7985 A 91 91 0 0 1 80.9005,0.5622 Z"/>
-<path fill-rule="evenodd" fill="#89e051" d="M 91,91 L 80.9005,0.5622 A 91 91 0 0 1 82.6069,0.3879 Z"/>
-<path fill-rule="evenodd" fill="#f34b7d" d="M 91,91 L 82.6069,0.3879 A 91 91 0 0 1 84.0312,0.2672 Z"/>
-<path fill-rule="evenodd" fill="#959da5" d="M 91,91 L 84.0312,0.2672 A 91 91 0 0 1 91.0000,0.0000 Z"/>
+<path fill-rule="evenodd" fill="#3178c6" d="M 91.0,91.0 L 91.0000,0.0000 A 91.0 91.0 0 0 1 181.9867,89.4415 Z"/>
+<path fill-rule="evenodd" fill="#f1e05a" d="M 91.0,91.0 L 181.9867,89.4415 A 91.0 91.0 0 0 1 125.3845,175.2538 Z"/>
+<path fill-rule="evenodd" fill="#3572A5" d="M 91.0,91.0 L 125.3845,175.2538 A 91.0 91.0 0 0 1 39.5299,166.0455 Z"/>
+<path fill-rule="evenodd" fill="#89e051" d="M 91.0,91.0 L 39.5299,166.0455 A 91.0 91.0 0 0 1 7.3474,126.8224 Z"/>
+<path fill-rule="evenodd" fill="#00ADD8" d="M 91.0,91.0 L 7.3474,126.8224 A 91.0 91.0 0 0 1 1.1685,76.4637 Z"/>
+<path fill-rule="evenodd" fill="#00B4AB" d="M 91.0,91.0 L 1.1685,76.4637 A 91.0 91.0 0 0 1 8.7697,52.0234 Z"/>
+<path fill-rule="evenodd" fill="#e34c26" d="M 91.0,91.0 L 8.7697,52.0234 A 91.0 91.0 0 0 1 18.8012,35.6074 Z"/>
+<path fill-rule="evenodd" fill="#178600" d="M 91.0,91.0 L 18.8012,35.6074 A 91.0 91.0 0 0 1 32.0597,21.6672 Z"/>
+<path fill-rule="evenodd" fill="#4F5D95" d="M 91.0,91.0 L 32.0597,21.6672 A 91.0 91.0 0 0 1 42.4200,14.0521 Z"/>
+<path fill-rule="evenodd" fill="#959da5" d="M 91.0,91.0 L 42.4200,14.0521 A 91.0 91.0 0 0 1 91.0000,0.0000 Z"/>
 </g>
 <g transform="translate(15, 21)">
-<rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#00ADD8" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" textLength="937" lengthAdjust="spacingAndGlyphs">Go 27.05%</text>
+<g transform="translate(15, 21)">
+<rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#3178c6" stroke-width="1" stroke="#ffffff"/>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">TypeScript 24.72%</text>
 </g>
 <g transform="translate(15, 42)">
 <rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#f1e05a" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" textLength="1761" lengthAdjust="spacingAndGlyphs">JavaScript 20.23%</text>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">JavaScript 19.10%</text>
 </g>
 <g transform="translate(15, 63)">
-<rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#3178c6" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" textLength="1761" lengthAdjust="spacingAndGlyphs">TypeScript 14.77%</text>
+<rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#3572A5" stroke-width="1" stroke="#ffffff"/>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Python 15.73%</text>
 </g>
 <g transform="translate(15, 84)">
-<rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#3572A5" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" textLength="1246" lengthAdjust="spacingAndGlyphs">Python 7.74%</text>
+<rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#89e051" stroke-width="1" stroke="#ffffff"/>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Shell 8.99%</text>
 </g>
 <g transform="translate(15, 105)">
-<rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#563d7c" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" textLength="937" lengthAdjust="spacingAndGlyphs">CSS 7.07%</text>
+<rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#00ADD8" stroke-width="1" stroke="#ffffff"/>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Go 8.99%</text>
 </g>
 <g transform="translate(15, 126)">
-<rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#e34c26" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" textLength="1040" lengthAdjust="spacingAndGlyphs">HTML 5.35%</text>
+<rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#00B4AB" stroke-width="1" stroke="#ffffff"/>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Dart 4.49%</text>
 </g>
 <g transform="translate(15, 147)">
-<rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#00B4AB" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" textLength="1040" lengthAdjust="spacingAndGlyphs">Dart 5.21%</text>
+<rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#e34c26" stroke-width="1" stroke="#ffffff"/>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">HTML 3.37%</text>
 </g>
 <g transform="translate(15, 168)">
-<rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#ece2a9" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" textLength="1040" lengthAdjust="spacingAndGlyphs">Haml 3.85%</text>
+<rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#178600" stroke-width="1" stroke="#ffffff"/>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">C# 3.37%</text>
 </g>
 <g transform="translate(15, 189)">
 <rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#4F5D95" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" textLength="937" lengthAdjust="spacingAndGlyphs">PHP 2.89%</text>
-<rect x="224.5" y="0.5" rx="2" width="15" height="15" fill="#c6538c" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="2621" y="132" textLength="1040" lengthAdjust="spacingAndGlyphs">SCSS 1.71%</text>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">PHP 2.25%</text>
 </g>
 <g transform="translate(15, 210)">
-<rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#b07219" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" textLength="1040" lengthAdjust="spacingAndGlyphs">Java 1.38%</text>
-<rect x="224.5" y="0.5" rx="2" width="15" height="15" fill="#178600" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="2621" y="132" textLength="834" lengthAdjust="spacingAndGlyphs">C# 0.64%</text>
+<rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#959da5" stroke-width="1" stroke="#ffffff"/>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Other 8.96%</text>
 </g>
-<g transform="translate(15, 231)">
-<rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#427819" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" textLength="1452" lengthAdjust="spacingAndGlyphs">Makefile 0.34%</text>
-<rect x="224.5" y="0.5" rx="2" width="15" height="15" fill="#89e051" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="2621" y="132" textLength="1143" lengthAdjust="spacingAndGlyphs">Shell 0.30%</text>
-</g>
-<g transform="translate(15, 252)">
-<rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#f34b7d" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" textLength="937" lengthAdjust="spacingAndGlyphs">C++ 0.25%</text>
-<rect x="224.5" y="0.5" rx="2" width="15" height="15" fill="#959da5" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="2621" y="132" textLength="1143" lengthAdjust="spacingAndGlyphs">Other 1.22%</text>
 </g>
 </g>
 </g>
