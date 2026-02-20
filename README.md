@@ -1,99 +1,90 @@
 
 <div align="left">
-  <img src="https://skillicons.dev/icons?i=aws&theme=dark" height="40" alt="aws logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" alt="Linux Logo" />
   <img width="12" />
-  <img src="images/lambda-logo.svg" height="40" alt="lambda logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" alt="Docker Logo" />
   <img width="12" />
-  <img src="images/step-functions-logo.svg" height="40" alt="step functions logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" height="40" alt="Kubernetes Logo" />
   <img width="12" />
-  <img src="images/eventbridge-logo.svg" height="40" alt="eventbridge logo" />
+  <img src="images/helm-logo.png" height="40" alt="Helm Logo" />
   <img width="12" />
-  <img src="images/api-gateway-logo.svg" height="40" alt="api gateway logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/argocd/argocd-original.svg" height="40" alt="Argocd Logo" />
   <img width="12" />
-  <img src="images/iam-logo.svg" height="40" alt="iam logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" height="40" alt="Grafana Logo" />
   <img width="12" />
-  <img src="images/kms-logo.svg" height="40" alt="kms logo" />
+  <img src="images/datadog-logo.png" height="40" alt="Datadog Logo" />
   <img width="12" />
-  <img src="images/secrets-manager-logo.svg" height="40" alt="secrets manager logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dynatrace/dynatrace-original.svg" height="40" alt="Dynatrace Logo" />
   <img width="12" />
-  <img src="images/s3-logo.svg" height="40" alt="s3 logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git Logo" />
   <img width="12" />
-  <img src="images/vpc-logo.svg" height="40" alt="vpc logo" />
+  <img src="images/github-logo.png" height="40" alt="GitHub Logo" />
   <img width="12" />
-  <img src="images/vpc-lattice-logo.svg" height="40" alt="vpc lattice logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" height="40" alt="GitHub Actions Logo" />
+  <br />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" alt="PostgreSQL Logo" />
   <img width="12" />
-  <img src="images/transit-gateway-logo.svg" height="40" alt="transit gateway logo" />
+  <img src="images/mysql-logo.png" height="40" alt="MySQL Logo" />
   <img width="12" />
-  <img src="images/cloud-wan-logo.svg" height="40" alt="cloud wan logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="40" alt="Redis Logo" />
   <img width="12" />
-  <img src="images/ec2-logo.svg" height="40" alt="ec2 logo" />
+  <img src="images/bash-logo.png" height="40" alt="Bash Logo" />
   <img width="12" />
-  <img src="images/ecs-logo.svg" height="40" alt="ecs logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" height="40" alt="Golang Logo" />
   <img width="12" />
-  <img src="images/eks-logo.svg" height="40" alt="eks logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="Python Logo" />
   <img width="12" />
-  <img src="images/rds-logo.svg" height="40" alt="rds logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="Javascript Logo" />
   <img width="12" />
-  <img src="images/dynamodb-logo.svg" height="40" alt="dynamodb logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="Typescript Logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" alt="postgresql logo" />
+  <img src="images/angular-logo.png" height="40" alt="Angular Logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="mysql logo" />
+  <img src="images/ansible-logo.png" height="40" alt="Ansible Logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="40" alt="redis logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" height="40" alt="Terraform Logo" />
   <img width="12" />
-  <img src="images/bedrock-logo.svg" height="40" alt="bedrock logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vault/vault-original.svg" height="40" alt="Hashicorp Vault Logo" />
   <img width="12" />
+  <img src="images/okta-logo.svg" height="40" alt="Okta Logo" />
+  <br />
+  <img src="images/aws-logo.svg" height="40" alt="AWS Logo" />
   <img width="12" />
-  <img src="images/snowflake-logo.svg" height="40" alt="snowflake logo" />
+  <img src="images/lambda-logo.svg" height="40" alt="AWS Lambda Logo" />
   <img width="12" />
-  <img src="images/kafka-logo.svg" height="40" alt="kafka logo" />
+  <img src="images/step-functions-logo.svg" height="40" alt="AWS Step Functions Logo" />
   <img width="12" />
-  <img src="https://imply.io/wp-content/uploads/2023/04/logo-Confluent-case-studies.jpg" height="40" alt="confluent logo" />
+  <img src="images/eventbridge-logo.svg" height="40" alt="AWS Eventbridge Logo" />
   <img width="12" />
-  <img src="images/cloudwatch-logo.svg" height="40" alt="cloudwatch logo" />
+  <img src="images/cloudwatch-logo.svg" height="40" alt="AWS Cloudwatch Logo" />
   <img width="12" />
-  <img src="images/cloudtrail-logo.svg" height="40" alt="cloudtrail logo" />
+  <img src="images/api-gateway-logo.svg" height="40" alt="AWS API Gateway Logo" />
   <img width="12" />
-  <img src="https://cdn.simpleicons.org/dynatrace/1496FF" height="40" alt="dynatrace logo" />
+  <img src="images/iam-logo.svg" height="40" alt="AWS IAM Logo" />
   <img width="12" />
-  <img src="https://img.shields.io/badge/Datadog-632CA6?style=for-the-badge&logo=datadog&logoColor=white" height="40" alt="datadog logo" />
+  <img src="images/kms-logo.svg" height="40" alt="AWS KMS Logo" />
   <img width="12" />
-  <img src="https://cdn.simpleicons.org/cloudflare/F38020" height="40" alt="cloudflare logo" />
+  <img src="images/secrets-manager-logo.svg" height="40" alt="AWS Secrets Manager Logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" height="40" alt="kubernetes logo" />
+  <img src="images/s3-logo.svg" height="40" alt="AWS S3 Logo" />
   <img width="12" />
-  <img src="images/helm-logo.svg" height="40" alt="helm logo" />
+  <img src="images/vpc-logo.svg" height="40" alt="AWS VPC Logo" />
   <img width="12" />
-  <img src="https://cdn.simpleicons.org/argo/EF7B4D" height="40" alt="argocd logo" />
+  <img src="images/vpc-lattice-logo.svg" height="40" alt="AWS VPC Lattice Logo" />
   <img width="12" />
-  <img src="images/backstage-logo.svg" height="40" alt="backstage logo" />
+  <img src="images/transit-gateway-logo.svg" height="40" alt="AWS Transit Gateway Logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" alt="docker logo" />
+  <img src="images/cloudtrail-logo.svg" height="40" alt="AWS Cloudtrail Logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" alt="linux logo" />
+  <img src="images/ec2-logo.svg" height="40" alt="AWS EC2 Logo" />
   <img width="12" />
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Bash_Logo_Colored.svg" height="40" alt="bash logo" />
+  <img src="images/ecs-logo.svg" height="40" alt="AWS ECS Logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo" />
+  <img src="images/eks-logo.svg" height="40" alt="AWS EKS Logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" height="40" alt="go logo" />
+  <img src="images/rds-logo.svg" height="40" alt="AWS RDS Logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" height="40" alt="terraform logo" />
-  <img width="12" />
-  <img src="https://cdn.simpleicons.org/vault/FFEC6E" height="40" alt="hashicorp vault logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo" />
-  <img width="12" />
-  <img src="https://cdn.simpleicons.org/github/white" height="40" alt="github logo" />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" height="40" alt="github actions logo" />
-  <img width="12" />
-  <img src="images/okta-logo.svg" height="40" alt="okta logo" />
+  <img src="images/aws-athena-logo.webp" height="40" alt="AWS Athena Logo" />
 </div>
 
 <details open>
