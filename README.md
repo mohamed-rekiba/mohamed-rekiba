@@ -1,5 +1,5 @@
 
-<div align="left">
+<div align="left" xmlns="http://www.w3.org/1999/xhtml">
   <style>
     img {
       mask-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iIE01MCAwIEM4NSAwIDEwMCAxNSAxMDAgNTAgQzEwMCA4NSA4NSAxMDAgNTAgMTAwIEMxNSAxMDAgMCA4NSAwIDUwIEMwIDE1IDE1IDAgNTAgMCBaIi8+PC9zdmc+);
