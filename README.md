@@ -1,5 +1,12 @@
 
 <div align="left">
+  <style>
+    img {
+      mask-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iIE01MCAwIEM4NSAwIDEwMCAxNSAxMDAgNTAgQzEwMCA4NSA4NSAxMDAgNTAgMTAwIEMxNSAxMDAgMCA4NSAwIDUwIEMwIDE1IDE1IDAgNTAgMCBaIi8+PC9zdmc+);
+      background-color: #fff;
+      width: 40px;
+    }
+  </style>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" alt="Linux Logo" />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" alt="Docker Logo" />
