@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+._*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+**extras
+
+# Compiled files
+*.pyc
