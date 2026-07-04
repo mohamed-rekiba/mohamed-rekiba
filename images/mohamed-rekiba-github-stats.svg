@@ -10,7 +10,7 @@
 <path fill="#1f6feb" fill-rule="evenodd" d="M2.5 1.75a.25.25 0 01.25-.25h10.5a.25.25 0 01.25.25v10.5a.25.25 0 01-.25.25H2.75a.25.25 0 01-.25-.25V1.75zM2.75 0A1.75 1.75 0 001 1.75v10.5c0 .966.784 1.75 1.75 1.75h10.5A1.75 1.75 0 0015 12.25V1.75A1.75 1.75 0 0013.25 0H2.75zm8.03 6.28a.75.75 0 00-1.06-1.06L6.75 8.19l-1.97-1.97a.75.75 0 00-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l3.5-3.5z"/>
 <g transform="scale(0.095)">
 <text lengthAdjust="spacingAndGlyphs" textLength="1589" x="263" y="132">Total Contributions</text>
-<text lengthAdjust="spacingAndGlyphs" textLength="422" x="3537" y="132">8771</text>
+<text lengthAdjust="spacingAndGlyphs" textLength="422" x="3537" y="132">8806</text>
 </g></g>
 </g>
 <g transform="translate(0, 84)" fill="#c9d1d9">
@@ -19,37 +19,37 @@
 </g></g>
 <g transform="translate(239, 21)"><circle cx="92" cy="92" r="92" fill="#ffffff"/></g>
 <g transform="translate(240, 22)">
-<path fill-rule="evenodd" fill="#3572A5" d="M 91.0,91.0 L 91.0000,0.0000 A 91.0 91.0 0 1 1 4.4010,118.9574 Z"/>
-<path fill-rule="evenodd" fill="#3178c6" d="M 91.0,91.0 L 4.4010,118.9574 A 91.0 91.0 0 0 1 13.9524,42.5782 Z"/>
-<path fill-rule="evenodd" fill="#41b883" d="M 91.0,91.0 L 13.9524,42.5782 A 91.0 91.0 0 0 1 35.2706,19.0609 Z"/>
-<path fill-rule="evenodd" fill="#00ADD8" d="M 91.0,91.0 L 35.2706,19.0609 A 91.0 91.0 0 0 1 54.5450,7.6212 Z"/>
-<path fill-rule="evenodd" fill="#89e051" d="M 91.0,91.0 L 54.5450,7.6212 A 91.0 91.0 0 0 1 70.6471,2.3052 Z"/>
-<path fill-rule="evenodd" fill="#959da5" d="M 91.0,91.0 L 70.6471,2.3052 A 91.0 91.0 0 0 1 91.0000,0.0000 Z"/>
+<path fill-rule="evenodd" fill="#3572A5" d="M 91.0,91.0 L 91.0000,0.0000 A 91.0 91.0 0 1 1 10.9189,134.2205 Z"/>
+<path fill-rule="evenodd" fill="#3178c6" d="M 91.0,91.0 L 10.9189,134.2205 A 91.0 91.0 0 0 1 8.3513,52.9185 Z"/>
+<path fill-rule="evenodd" fill="#41b883" d="M 91.0,91.0 L 8.3513,52.9185 A 91.0 91.0 0 0 1 38.9132,16.3812 Z"/>
+<path fill-rule="evenodd" fill="#00ADD8" d="M 91.0,91.0 L 38.9132,16.3812 A 91.0 91.0 0 0 1 56.8669,6.6440 Z"/>
+<path fill-rule="evenodd" fill="#89e051" d="M 91.0,91.0 L 56.8669,6.6440 A 91.0 91.0 0 0 1 71.5975,2.0925 Z"/>
+<path fill-rule="evenodd" fill="#959da5" d="M 91.0,91.0 L 71.5975,2.0925 A 91.0 91.0 0 0 1 91.0000,0.0000 Z"/>
 </g>
 <g transform="translate(15, 21)">
 <g transform="translate(15, 21)">
 <rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#3572A5" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Python 70.03%</text>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Python 67.13%</text>
 </g>
 <g transform="translate(15, 42)">
 <rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#3178c6" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">TypeScript 13.90%</text>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">TypeScript 14.75%</text>
 </g>
 <g transform="translate(15, 63)">
 <rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#41b883" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Vue 5.58%</text>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Vue 8.43%</text>
 </g>
 <g transform="translate(15, 84)">
 <rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#00ADD8" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Go 3.93%</text>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Go 3.58%</text>
 </g>
 <g transform="translate(15, 105)">
 <rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#89e051" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Shell 2.97%</text>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Shell 2.70%</text>
 </g>
 <g transform="translate(15, 126)">
 <rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#959da5" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Other 3.59%</text>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Other 3.42%</text>
 </g>
 </g>
 </g>
