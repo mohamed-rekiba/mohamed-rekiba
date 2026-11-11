@@ -10,7 +10,7 @@
 <path fill="#1f6feb" fill-rule="evenodd" d="M2.5 1.75a.25.25 0 01.25-.25h10.5a.25.25 0 01.25.25v10.5a.25.25 0 01-.25.25H2.75a.25.25 0 01-.25-.25V1.75zM2.75 0A1.75 1.75 0 001 1.75v10.5c0 .966.784 1.75 1.75 1.75h10.5A1.75 1.75 0 0015 12.25V1.75A1.75 1.75 0 0013.25 0H2.75zm8.03 6.28a.75.75 0 00-1.06-1.06L6.75 8.19l-1.97-1.97a.75.75 0 00-1.06 1.06l2.5 2.5a.75.75 0 001.06 0l3.5-3.5z"/>
 <g transform="scale(0.095)">
 <text lengthAdjust="spacingAndGlyphs" textLength="1589" x="263" y="132">Total Contributions</text>
-<text lengthAdjust="spacingAndGlyphs" textLength="422" x="3537" y="132">6689</text>
+<text lengthAdjust="spacingAndGlyphs" textLength="422" x="3537" y="132">6736</text>
 </g></g>
 </g>
 <g transform="translate(0, 84)" fill="#c9d1d9">
@@ -19,22 +19,22 @@
 </g></g>
 <g transform="translate(239, 21)"><circle cx="92" cy="92" r="92" fill="#ffffff"/></g>
 <g transform="translate(240, 22)">
-<path fill-rule="evenodd" fill="#3572A5" d="M 91.0,91.0 L 91.0000,0.0000 A 91.0 91.0 0 0 1 107.3773,180.5142 Z"/>
-<path fill-rule="evenodd" fill="#dea584" d="M 91.0,91.0 L 107.3773,180.5142 A 91.0 91.0 0 0 1 2.1420,71.3722 Z"/>
-<path fill-rule="evenodd" fill="#2379F4" d="M 91.0,91.0 L 2.1420,71.3722 A 91.0 91.0 0 0 1 17.6492,37.1422 Z"/>
-<path fill-rule="evenodd" fill="#3178c6" d="M 91.0,91.0 L 17.6492,37.1422 A 91.0 91.0 0 0 1 36.3618,18.2287 Z"/>
-<path fill-rule="evenodd" fill="#41b883" d="M 91.0,91.0 L 36.3618,18.2287 A 91.0 91.0 0 0 1 53.1878,8.2278 Z"/>
-<path fill-rule="evenodd" fill="#89e051" d="M 91.0,91.0 L 53.1878,8.2278 A 91.0 91.0 0 0 1 65.1181,3.7582 Z"/>
-<path fill-rule="evenodd" fill="#959da5" d="M 91.0,91.0 L 65.1181,3.7582 A 91.0 91.0 0 0 1 91.0000,0.0000 Z"/>
+<path fill-rule="evenodd" fill="#3572A5" d="M 91.0,91.0 L 91.0000,0.0000 A 91.0 91.0 0 0 1 109.0055,180.2009 Z"/>
+<path fill-rule="evenodd" fill="#dea584" d="M 91.0,91.0 L 109.0055,180.2009 A 91.0 91.0 0 0 1 2.2544,70.8701 Z"/>
+<path fill-rule="evenodd" fill="#2379F4" d="M 91.0,91.0 L 2.2544,70.8701 A 91.0 91.0 0 0 1 17.9550,36.7282 Z"/>
+<path fill-rule="evenodd" fill="#3178c6" d="M 91.0,91.0 L 17.9550,36.7282 A 91.0 91.0 0 0 1 36.6824,17.9891 Z"/>
+<path fill-rule="evenodd" fill="#41b883" d="M 91.0,91.0 L 36.6824,17.9891 A 91.0 91.0 0 0 1 53.4480,8.1094 Z"/>
+<path fill-rule="evenodd" fill="#89e051" d="M 91.0,91.0 L 53.4480,8.1094 A 91.0 91.0 0 0 1 65.2826,3.7096 Z"/>
+<path fill-rule="evenodd" fill="#959da5" d="M 91.0,91.0 L 65.2826,3.7096 A 91.0 91.0 0 0 1 91.0000,0.0000 Z"/>
 </g>
 <g transform="translate(15, 21)">
 <g transform="translate(15, 21)">
 <rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#3572A5" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Python 47.12%</text>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Python 46.83%</text>
 </g>
 <g transform="translate(15, 42)">
 <rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#dea584" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Rust 31.34%</text>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Rust 31.72%</text>
 </g>
 <g transform="translate(15, 63)">
 <rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#2379F4" stroke-width="1" stroke="#ffffff"/>
@@ -42,19 +42,19 @@
 </g>
 <g transform="translate(15, 84)">
 <rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#3178c6" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">TypeScript 4.67%</text>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">TypeScript 4.65%</text>
 </g>
 <g transform="translate(15, 105)">
 <rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#41b883" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Vue 3.43%</text>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Vue 3.41%</text>
 </g>
 <g transform="translate(15, 126)">
 <rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#89e051" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Shell 2.23%</text>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Shell 2.21%</text>
 </g>
 <g transform="translate(15, 147)">
 <rect x="0.5" y="0.5" rx="2" width="15" height="15" fill="#959da5" stroke-width="1" stroke="#ffffff"/>
-<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Other 4.59%</text>
+<text transform="scale(0.095)" x="263" y="132" lengthAdjust="spacingAndGlyphs">Other 4.56%</text>
 </g>
 </g>
 </g>
