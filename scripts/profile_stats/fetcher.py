@@ -3,9 +3,8 @@ from __future__ import annotations
 
 import json
 import os
-import urllib.error
 import urllib.request
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Optional
 
@@ -43,9 +42,9 @@ _POWER_TIERS: list[tuple[int, str]] = [
 ]
 
 
-def _compute_rank(past_year_contributions: int) -> str:
+def _compute_rank(total_contributions: int) -> str:
     for threshold, label in _RANK_TIERS:
-        if past_year_contributions >= threshold:
+        if total_contributions >= threshold:
             return label
     return "Unranked"
 
@@ -99,7 +98,10 @@ def _graphql(token: str, query: str, variables: Optional[dict[str, Any]] = None)
         method="POST",
     )
     with urllib.request.urlopen(req, timeout=30) as resp:
-        return json.loads(resp.read().decode("utf-8"))
+        body = json.loads(resp.read().decode("utf-8"))
+    if body.get("errors"):
+        raise RuntimeError(f"GitHub GraphQL error: {body['errors']}")
+    return body
 
 
 def _load_config(config_path: Path) -> ConfigOverrides:
@@ -125,14 +127,19 @@ def _load_config(config_path: Path) -> ConfigOverrides:
     )
 
 
-# GitHub's contributionCalendar returns at most ~1 year of data per query.
-# Chunk ranges into 365-day windows and sum to get true all-time total.
-_DAYS_PER_CHUNK = 365
+_YEARS_QUERY = """
+query($login: String!) {
+  user(login: $login) {
+    contributionsCollection { contributionYears }
+  }
+}
+"""
 
-_CONTRIBUTIONS_QUERY = """
+# One query per calendar year. GitHub limits a contributionsCollection range
+# to one year, and calendar years match the yearly totals on the profile page.
+_YEAR_QUERY = """
 query($login: String!, $from: DateTime!, $to: DateTime!) {
   user(login: $login) {
-    createdAt
     contributionsCollection(from: $from, to: $to) {
       contributionCalendar {
         totalContributions
@@ -148,148 +155,92 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
 }
 """
 
-_CONTRIBUTIONS_ONLY_QUERY = """
-query($login: String!, $from: DateTime!, $to: DateTime!) {
-  user(login: $login) {
-    contributionsCollection(from: $from, to: $to) {
-      contributionCalendar { totalContributions }
-    }
-  }
-}
-"""
+
+def _user(data: dict[str, Any], username: str) -> dict[str, Any]:
+    user = (data.get("data") or {}).get("user")
+    if not user:
+        raise RuntimeError(f"GitHub user not found: {username}")
+    return user
 
 
-def _compute_wrapped_from_calendar(weeks: list[Any]) -> tuple[int, str, str]:
-    """From contributionCalendar.weeks compute longest_streak_days, most_active_month, most_active_day."""
-    if not weeks:
-        return 0, "—", "—"
-    days: list[tuple[str, int]] = []
-    for week in weeks:
-        for day in week.get("contributionDays") or []:
-            d = day.get("date")
-            c = int(day.get("contributionCount") or 0)
-            if d:
-                days.append((d, c))
-    days.sort(key=lambda x: x[0])
+def _compute_wrapped_from_days(days: dict[str, int]) -> tuple[int, str, str]:
+    """From {YYYY-MM-DD: count} compute longest_streak_days, most_active_month, most_active_day."""
     if not days:
         return 0, "—", "—"
 
-    # Longest streak: max consecutive days with contributionCount > 0
+    # Longest streak: most consecutive calendar dates with a count above zero.
     longest_streak = 0
     current_streak = 0
-    for _date, count in days:
-        if count > 0:
-            current_streak += 1
-            longest_streak = max(longest_streak, current_streak)
-        else:
+    previous: Optional[date] = None
+    for date_str in sorted(days):
+        current = date.fromisoformat(date_str)
+        if days[date_str] <= 0:
             current_streak = 0
+        elif previous is not None and current_streak and current - previous == timedelta(days=1):
+            current_streak += 1
+        else:
+            current_streak = 1
+        longest_streak = max(longest_streak, current_streak)
+        previous = current
 
-    # Most active month: aggregate by month (YYYY-MM), find max
+    # Most active month: the single month (for example "July 2026") with the most contributions.
     month_totals: dict[str, int] = {}
-    for date_str, count in days:
-        if len(date_str) >= 7:
-            month_key = date_str[:7]
-            month_totals[month_key] = month_totals.get(month_key, 0) + count
-    if month_totals:
-        best_month_key = max(month_totals, key=month_totals.get)
-        try:
-            y, m = int(best_month_key[:4]), int(best_month_key[5:7])
-            most_active_month = MONTH_NAMES[m - 1] if 1 <= m <= 12 else "—"
-        except (ValueError, IndexError):
-            most_active_month = "—"
+    for date_str, count in days.items():
+        month_totals[date_str[:7]] = month_totals.get(date_str[:7], 0) + count
+    best_month_key = max(month_totals, key=lambda k: month_totals[k])
+    if month_totals[best_month_key] > 0:
+        year, month = int(best_month_key[:4]), int(best_month_key[5:7])
+        most_active_month = f"{MONTH_NAMES[month - 1]} {year}"
     else:
         most_active_month = "—"
 
-    # Most active day of week: aggregate by weekday (Monday=0 .. Sunday=6)
-    weekday_totals: list[int] = [0] * 7
-    for date_str, count in days:
-        try:
-            dt = datetime.strptime(date_str, "%Y-%m-%d")
-            weekday_totals[dt.weekday()] += count
-        except (ValueError, IndexError):
-            continue
-    if weekday_totals and max(weekday_totals) > 0:
-        best_weekday_idx = max(range(7), key=lambda i: weekday_totals[i])
-        most_active_day = WEEKDAYS[best_weekday_idx]
+    # Most active day of week, summed over all years (Monday=0 .. Sunday=6).
+    weekday_totals = [0] * 7
+    for date_str, count in days.items():
+        weekday_totals[date.fromisoformat(date_str).weekday()] += count
+    if max(weekday_totals) > 0:
+        most_active_day = WEEKDAYS[max(range(7), key=lambda i: weekday_totals[i])]
     else:
         most_active_day = "—"
 
     return longest_streak, most_active_month, most_active_day
 
 
-def _fetch_contributions(token: str, username: str) -> tuple[int, int, list[Any]]:
-    """Return (past_year, total, calendar_weeks). Past year = last 365 days; total = all-time (chunked)."""
-    end = datetime.utcnow()
-    to_str = end.strftime("%Y-%m-%dT23:59:59Z")
-    start_past = end - timedelta(days=365)
-    from_past_str = start_past.strftime("%Y-%m-%dT00:00:00Z")
+def _fetch_contributions(token: str, username: str) -> tuple[int, int, dict[str, int]]:
+    """Return (past_year, all_time_total, {YYYY-MM-DD: count} for every day since the first year).
 
-    # Query 1: user createdAt + past year contributions + calendar weeks (for streak/month/day)
-    try:
+    Raises on any API error, so a failed run never writes a partial total.
+    """
+    years_data = _graphql(token, _YEARS_QUERY, {"login": username})
+    years = _user(years_data, username)["contributionsCollection"]["contributionYears"]
+
+    total = 0
+    days: dict[str, int] = {}
+    for year in sorted(years):
         data = _graphql(
             token,
-            _CONTRIBUTIONS_QUERY,
-            {"login": username, "from": from_past_str, "to": to_str},
+            _YEAR_QUERY,
+            {"login": username, "from": f"{year}-01-01T00:00:00Z", "to": f"{year}-12-31T23:59:59Z"},
         )
-    except (urllib.error.HTTPError, urllib.error.URLError, json.JSONDecodeError):
-        return 0, 0, []
-    if not data:
-        return 0, 0, []
-    payload = data.get("data") or {}
-    user = payload.get("user")
-    if not user:
-        return 0, 0, []
-    collection = user.get("contributionsCollection") or {}
-    cal = collection.get("contributionCalendar") or {}
-    past_year = int(cal.get("totalContributions") or 0)
-    weeks = cal.get("weeks") or []
-    created_at = user.get("createdAt")
-    if not created_at:
-        return past_year, past_year, weeks
+        calendar = _user(data, username)["contributionsCollection"]["contributionCalendar"]
+        total += int(calendar["totalContributions"])
+        for week in calendar["weeks"]:
+            for day in week["contributionDays"]:
+                if day["date"].startswith(str(year)):
+                    days[day["date"]] = int(day["contributionCount"])
 
-    # Total: chunk from createdAt to now in 365-day windows and sum (API returns at most ~1 year per query)
-    try:
-        created_dt = datetime.fromisoformat(created_at.replace("Z", "+00:00"))
-        if created_dt.tzinfo is not None:
-            created_dt = created_dt.replace(tzinfo=None)  # work in naive UTC like end
-    except (ValueError, TypeError):
-        return past_year, past_year, weeks
-    total = 0
-    chunk_start = created_dt
-    while chunk_start < end:
-        chunk_end_dt = min(chunk_start + timedelta(days=_DAYS_PER_CHUNK), end)
-        from_str = chunk_start.strftime("%Y-%m-%dT00:00:00Z")
-        chunk_to_str = chunk_end_dt.strftime("%Y-%m-%dT23:59:59Z")
-        try:
-            data_chunk = _graphql(
-                token,
-                _CONTRIBUTIONS_ONLY_QUERY,
-                {"login": username, "from": from_str, "to": chunk_to_str},
-            )
-        except (urllib.error.HTTPError, urllib.error.URLError, json.JSONDecodeError):
-            break
-        if not data_chunk:
-            break
-        p = data_chunk.get("data") or {}
-        u = p.get("user")
-        if not u:
-            break
-        coll = u.get("contributionsCollection") or {}
-        c = coll.get("contributionCalendar") or {}
-        total += int(c.get("totalContributions") or 0)
-        chunk_start = chunk_end_dt
-        if chunk_start >= end:
-            break
-
-    return past_year, total if total > 0 else past_year, weeks
+    past_year_start = (datetime.now(timezone.utc).date() - timedelta(days=365)).isoformat()
+    past_year = sum(count for d, count in days.items() if d > past_year_start)
+    return past_year, total, days
 
 
 def _fetch_languages(token: str, username: str) -> list[LanguageEntry]:
-    """Aggregate languages by bytes of code across user's repos."""
+    """Aggregate languages by bytes of code across all of the user's own non-fork repos."""
     query = """
-    query($login: String!) {
+    query($login: String!, $after: String) {
       user(login: $login) {
-        repositories(first: 100, ownerAffiliations: OWNER, isFork: false, orderBy: { field: PUSHED_AT, direction: DESC }) {
+        repositories(first: 100, after: $after, ownerAffiliations: OWNER, isFork: false) {
+          pageInfo { hasNextPage endCursor }
           nodes {
             languages(first: 10, orderBy: { field: SIZE, direction: DESC }) {
               edges {
@@ -302,34 +253,26 @@ def _fetch_languages(token: str, username: str) -> list[LanguageEntry]:
       }
     }
     """
-    try:
-        data = _graphql(token, query, {"login": username})
-    except (urllib.error.HTTPError, urllib.error.URLError, json.JSONDecodeError):
-        return []
-    if not data:
-        return []
-    payload = data.get("data") or {}
-    user = payload.get("user")
-    if not user:
-        return []
-    repos = user.get("repositories") or {}
-    nodes = repos.get("nodes") or []
     byte_totals: dict[str, int] = {}
     api_colors: dict[str, str] = {}
-    for repo in nodes:
-        if not repo:
-            continue
-        languages = repo.get("languages") or {}
-        for edge in languages.get("edges") or []:
-            size = int(edge.get("size") or 0)
-            node = edge.get("node") or {}
-            name = node.get("name")
-            if not name or size <= 0:
-                continue
-            byte_totals[name] = byte_totals.get(name, 0) + size
-            color = node.get("color")
-            if color and name not in api_colors:
-                api_colors[name] = color
+    after: Optional[str] = None
+    while True:
+        data = _graphql(token, query, {"login": username, "after": after})
+        repos = _user(data, username)["repositories"]
+        for repo in repos["nodes"] or []:
+            for edge in (repo or {}).get("languages", {}).get("edges") or []:
+                size = int(edge.get("size") or 0)
+                node = edge.get("node") or {}
+                name = node.get("name")
+                if not name or size <= 0:
+                    continue
+                byte_totals[name] = byte_totals.get(name, 0) + size
+                color = node.get("color")
+                if color and name not in api_colors:
+                    api_colors[name] = color
+        if not repos["pageInfo"]["hasNextPage"]:
+            break
+        after = repos["pageInfo"]["endCursor"]
     total_bytes = sum(byte_totals.values())
     if total_bytes == 0:
         return []
@@ -363,9 +306,9 @@ class GitHubDataFetcher(DataFetcher):
         token = _get_token()
         past_year, total = 0, 0
         languages: list[LanguageEntry] = []
-        calendar_weeks: list[Any] = []
+        days: dict[str, int] = {}
         if token and username:
-            past_year, total, calendar_weeks = _fetch_contributions(token, username)
+            past_year, total, days = _fetch_contributions(token, username)
             languages = _fetch_languages(token, username)
         if overrides.past_year_contributions is not None:
             past_year = overrides.past_year_contributions
@@ -374,14 +317,14 @@ class GitHubDataFetcher(DataFetcher):
         contribution = ContributionStats(past_year=past_year, total=total)
         top_lang = (languages[0].name if languages else "N/A")
 
-        computed_streak, computed_month, computed_day = _compute_wrapped_from_calendar(calendar_weeks)
+        computed_streak, computed_month, computed_day = _compute_wrapped_from_days(days)
         longest_streak = (
             overrides.longest_streak_days
             if overrides.longest_streak_days is not None
             else computed_streak
         )
         wrapped = WrappedMetrics(
-            universal_rank=overrides.universal_rank or _compute_rank(past_year),
+            universal_rank=overrides.universal_rank or _compute_rank(total),
             longest_streak_days=longest_streak,
             most_active_month=overrides.most_active_month or computed_month,
             most_active_day=overrides.most_active_day or computed_day,

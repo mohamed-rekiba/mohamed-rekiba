@@ -27,7 +27,8 @@ jobs:
 
       - name: Generate profile stats SVGs
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Personal token: the Actions bot token gets wrong contributions.
+          GITHUB_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
         run: |
           PYTHONPATH=scripts python3 scripts/generate_github_profile_stats.py \
             --output-dir images \
